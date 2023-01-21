@@ -1,0 +1,444 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Apply",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.Apply",
+            "projectName": "tree-rule_b4003b60",
+            "args": "./anyburl/config-apply.properties"
+        },
+        {
+            "type": "java",
+            "name": "Launch Eval",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.Eval",
+            "projectName": "tree-rule_b4003b60",
+            "args": "./anyburl/config-eval.properties"
+        },
+        {
+            "type": "java",
+            "name": "Launch Explain",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.Explain",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch Filter",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.Filter",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch LearnReinforced",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.LearnReinforced",
+            "projectName": "tree-rule_b4003b60",
+            "args": "./anyburl/config-learn.properties"
+        },
+        {
+            "type": "java",
+            "name": "Launch PathSampler",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.algorithm.PathSampler",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch TripleSet",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.data.TripleSet",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch TripleSetX",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.data.TripleSetX",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch AggregateEvaluation",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.eval.AggregateEvaluation",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch ComparativeEvaluation",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.eval.ComparativeEvaluation",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch DiffRank1",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.eval.DiffRank1",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch RandomPrediction",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.eval.RandomPrediction",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch ResultSetStats",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.eval.ResultSetStats",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestHardnessEstimator",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.eval.TestHardnessEstimator",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch XRYEvaluation",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.eval.XRYEvaluation",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch Yago03TC",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.eval.Yago03TC",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch RuleReader",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.io.RuleReader",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.io.Test",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch CLUTTRPredictor",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.playground.CLUTTRPredictor",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch ComparisonResultSets",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.playground.ComparisonResultSets",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch Explicator",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.playground.Explicator",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch Functionality",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.playground.Functionality",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch HashCodeTest",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.playground.HashCodeTest",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch KullbackLeibler",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.playground.KullbackLeibler",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch MemoryTest",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.playground.MemoryTest",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch MultiplicationTest",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.playground.MultiplicationTest",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch NegationFilter",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.playground.NegationFilter",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch NegationLearner",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.playground.NegationLearner",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch OpenBioTests",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.playground.OpenBioTests",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrimeJonathan",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.playground.PrimeJonathan",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch Synthetic",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.playground.Synthetic",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch TopK500",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.playground.TopK500",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch WNvsFB",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.playground.WNvsFB",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch EvaluationPerRelation",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.playground.dream.EvaluationPerRelation",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch IndexAC12ZeroTree",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.playground.dream.IndexAC12ZeroTree",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch Boxes",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.playground.generator.Boxes",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch EvalRelationSpecific",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.playground.tf.EvalRelationSpecific",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch RSComparisonSimple",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.playground.tf.RSComparisonSimple",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test(1)",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.playground.tf.Test",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch DiffTrans",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.rescore.DiffTrans",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch Join",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.rescore.Join",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch Outlier",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.rescore.Outlier",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch Psi",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.rescore.Psi",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch Psi2",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.rescore.Psi2",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch Translator",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.rescore.Translator",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReflexivityFix",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.rescore.fixes.ReflexivityFix",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch Dice",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.structure.Dice",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch RuleCyclicZ",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.structure.RuleCyclicZ",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch ScoreTree",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.structure.ScoreTree",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch Bhattacharyya",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.util.Bhattacharyya",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch DB500Filter",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.util.DB500Filter",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch DB500Rewriter",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.util.DB500Rewriter",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch HardTestCases",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.util.HardTestCases",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch HepatitisEval",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.util.HepatitisEval",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch MartinAnalysis",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.util.MartinAnalysis",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch OLPBenchExtender",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.util.OLPBenchExtender",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch ObjectIdentity",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.util.ObjectIdentity",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch RuleExplorer",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.util.RuleExplorer",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch ScoreTreeTest",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.util.ScoreTreeTest",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch Splitter",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.util.Splitter",
+            "projectName": "tree-rule_b4003b60"
+        },
+        {
+            "type": "java",
+            "name": "Launch VaidTestRewriter",
+            "request": "launch",
+            "mainClass": "de.unima.ki.anyburl.util.VaidTestRewriter",
+            "projectName": "tree-rule_b4003b60"
+        }
+    ]
+}

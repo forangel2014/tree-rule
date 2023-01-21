@@ -1,0 +1,73 @@
+package de.unima.ki.anyburl.rescore;
+
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.HashSet;
+
+import org.apache.commons.math3.util.Decimal64;
+
+import de.unima.ki.anyburl.eval.CompletionResult;
+import de.unima.ki.anyburl.eval.ResultSet;
+
+public class Diff {
+	
+	private static int hitAt1Basic = 0;
+	private static int hitAt1Improved = 0;
+	
+	public static void main(String[] args) {
+		
+		
+		Translator t = new Translator("E:/code/eclipse-workspace/AnyBURL/data/CODEX/_meta/entities_labels.txt");
+		
+		DecimalFormat df = new DecimalFormat("0.000");
+		
+		HashSet<String> showTriplesFromRelation = new HashSet<String>();
+		showTriplesFromRelation.add("P108");
+		boolean headNotTail = false;
+		int topN = 10;
+		
+		ResultSet basic    = new ResultSet("AnyBURL     ", "exp/understanding/codex-m/anyburl-c3-3600-100-test", true, 100);
+		ResultSet improved = new ResultSet("ComplEx     ", "exp/understanding/codex-m/complex-100-test", true, 100);
+		
+		for (String triple : basic.getTriples()) {
+			String[] token = triple.split(" ");
+			String head = token[0]; 
+			String relation = token[1];
+			String tail = token[2];
+			
+			if (showTriplesFromRelation.contains(relation)) {
+				CompletionResult crBasic = basic.getCompletionResult(triple);
+				CompletionResult crImproved = improved.getCompletionResult(triple);
+				System.out.println(t.get(head) + " " + relation + " "+  t.get( tail));		
+				System.out.println(head + " " + relation + " "+  tail);		
+				StringBuilder sb = getRankInfo(t, df, crBasic, crImproved, topN, headNotTail, head, tail);		
+				System.out.println(sb.toString());
+			}
+		}
+		System.out.println("Sanity check: h@1basic = " + hitAt1Basic + " h@1improved = " + hitAt1Improved);
+
+	}
+
+	private static StringBuilder getRankInfo(Translator t, DecimalFormat df, CompletionResult crBasic, CompletionResult crImproved, int topN, boolean headNotTail, String head, String tail) {
+		//boolean foundHitInImproved = false;
+		StringBuilder sb = new StringBuilder("");
+		String correct = headNotTail ? head : tail;
+		String selfref = headNotTail ? tail : head;
+		ArrayList<String> basicCandidates = headNotTail ? crBasic.getHeads() : crBasic.getTails();
+		ArrayList<Double> basicScores = headNotTail ? crBasic.getHeadConfidences() : crBasic.getTailConfidences();
+		ArrayList<String> improvedCandidates = headNotTail ? crImproved.getHeads() : crImproved.getTails();
+		ArrayList<Double> improvedScores = headNotTail ? crImproved.getHeadConfidences() : crImproved.getTailConfidences();
+		for (int i = 0; i < topN; i++) {
+			if (i == 0 && improvedCandidates.get(i).equals(correct)) hitAt1Improved++;
+			// if (i == 1 && improvedCandidates.get(1).equals(correct) && improvedCandidates.get(0).equals(selfref)) hitAt1Improved++;
+			if (i == 0 && basicCandidates.get(i).equals(correct)) hitAt1Basic++;
+			
+			
+			// if (improvedCandidates.get(i).equals(correct) && improvedCandidates.get(i).equals(correct))
+			sb.append(i + "\t" + t.get(basicCandidates.get(i)) + "\t" + df.format(basicScores.get(i)) + "\t");
+			sb.append(t.get(improvedCandidates.get(i)) + "\t" + df.format(improvedScores.get(i)) + "\n");
+		}
+		return sb;
+	}
+
+}
